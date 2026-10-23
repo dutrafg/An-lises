@@ -1,0 +1,5 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),{analyze}=require('../index.js');
+const base=JSON.parse(fs.readFileSync('examples/historico.json','utf8'));let passed=0,blocked=0;
+for(let i=0;i<10000;i++){const input=structuredClone(base);input.records.forEach((x,j)=>{x.id='i'+i+'-'+j;x.peso+=((i%9)-4)/100;x.dobras_resultado.massaMagra=x.peso*(1-x.dobras_resultado.percGordura/100)});input.selectedIds=input.records.map(x=>x.id);if(i%10===0)input.records[3].cliente_id='outra-identidade';if(i%10===1)input.records[1].data_avaliacao='2026-01-01';if(i%10===2)input.records[1].peso='75kg';const before=JSON.stringify(input);const out=analyze(input);assert.equal(JSON.stringify(input),before);assert(!JSON.stringify(out).includes('NaN'));assert(!JSON.stringify(out).includes('Infinity'));assert.equal(out.eligible,!(i%10<3));if(out.eligible)assert.deepEqual(Object.keys(out.engines).sort(),['EF68','EF70','EF77','EF78','EF79','EF80','EF81','EF82'].sort());passed++;if(!out.eligible)blocked++}
+console.log(JSON.stringify({histories:passed,blocked,approved:passed-blocked,failures:0}));

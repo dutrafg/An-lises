@@ -1,0 +1,15 @@
+{
+  "name": "analises-efia-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Núcleo headless de oito motores EFIA, sem UI, rede ou armazenamento",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node tests/run.cjs",
+    "test:stress": "node tests/stress.cjs",
+    "example": "node cli.js examples/historico.json"
+  }
+}

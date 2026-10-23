@@ -1,0 +1,127 @@
+{
+  "profileKey": "aluno-001",
+  "selectedIds": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "records": [
+    {
+      "id": "1",
+      "cliente_id": "aluno-001",
+      "nome": "Aluno de exemplo (sintético)",
+      "idade": 30,
+      "sexo": "M",
+      "altura": 175,
+      "data_avaliacao": "2026-01-01",
+      "peso": 80,
+      "perimetria": {
+        "cintura": 88,
+        "quadril": 100,
+        "pescoco": 36
+      },
+      "dobras_resultado": {
+        "percGordura": 25,
+        "massaMagra": 60
+      },
+      "bioimpedancia": {
+        "pgordura": 25.5
+      },
+      "efia_protocol": {
+        "equation": "Pollock 7",
+        "version": "1",
+        "device": "Adipômetro A",
+        "standardized": true,
+        "compositionRelation": "same-estimate"
+      }
+    },
+    {
+      "id": "2",
+      "cliente_id": "aluno-001",
+      "nome": "Aluno de exemplo (sintético)",
+      "idade": 30,
+      "sexo": "M",
+      "altura": 175,
+      "data_avaliacao": "2026-02-01",
+      "peso": 79.2,
+      "perimetria": {
+        "cintura": 87,
+        "quadril": 100,
+        "pescoco": 36
+      },
+      "dobras_resultado": {
+        "percGordura": 24.4,
+        "massaMagra": 59.8752
+      },
+      "bioimpedancia": {
+        "pgordura": 24.9
+      },
+      "efia_protocol": {
+        "equation": "Pollock 7",
+        "version": "1",
+        "device": "Adipômetro A",
+        "standardized": true,
+        "compositionRelation": "same-estimate"
+      }
+    },
+    {
+      "id": "3",
+      "cliente_id": "aluno-001",
+      "nome": "Aluno de exemplo (sintético)",
+      "idade": 30,
+      "sexo": "M",
+      "altura": 175,
+      "data_avaliacao": "2026-03-01",
+      "peso": 78.4,
+      "perimetria": {
+        "cintura": 86,
+        "quadril": 100,
+        "pescoco": 36
+      },
+      "dobras_resultado": {
+        "percGordura": 23.8,
+        "massaMagra": 59.74080000000001
+      },
+      "bioimpedancia": {
+        "pgordura": 24.3
+      },
+      "efia_protocol": {
+        "equation": "Pollock 7",
+        "version": "1",
+        "device": "Adipômetro A",
+        "standardized": true,
+        "compositionRelation": "same-estimate"
+      }
+    },
+    {
+      "id": "4",
+      "cliente_id": "aluno-001",
+      "nome": "Aluno de exemplo (sintético)",
+      "idade": 30,
+      "sexo": "M",
+      "altura": 175,
+      "data_avaliacao": "2026-04-01",
+      "peso": 77.6,
+      "perimetria": {
+        "cintura": 85,
+        "quadril": 100,
+        "pescoco": 36
+      },
+      "dobras_resultado": {
+        "percGordura": 23.2,
+        "massaMagra": 59.596799999999995
+      },
+      "bioimpedancia": {
+        "pgordura": 23.7
+      },
+      "efia_protocol": {
+        "equation": "Pollock 7",
+        "version": "1",
+        "device": "Adipômetro A",
+        "standardized": true,
+        "compositionRelation": "same-estimate"
+      }
+    }
+  ]
+}
